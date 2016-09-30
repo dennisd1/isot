@@ -1,0 +1,31 @@
+﻿# Plugins
+gems:
+- jekyll-sitemap
+safe: false
+
+# Build Settings
+markdown: kramdown
+permalink: pretty
+exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
+
+
+
+# Head
+metaKeywords: "event"
+
+
+# Documents
+
+
+
+# Navigation
+navigationLinks:
+ - {permalink: "/", text: "Home"}
+ - {permalink: "/features/", text: "Features"}
+ - {permalink: "/oteam/", text: "Teamnew"}
+ - {permalink: "/team/", text: "Team"}
+ - {permalink: "/communities/", text: "Communities"}
+ - {permalink: "/blog/", text: "Blog"}
+
+
+ 

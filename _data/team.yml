@@ -1,0 +1,77 @@
+- 
+  id: 0
+  name: "George"
+  surname: "Fisher"
+  title: "CEO"
+  thumbnailUrl: GeorgeFisher.jpg
+  team: true
+  ribbon: 
+    - {abbr: "Yoch TV", title: "CEO"}
+  social: 
+    - {name: "linkedin", link: "https://linkedin.com"}
+- 
+  id: 1
+  name: "Andy"
+  surname: "Richards"
+  title: "Chief Technology Officer"
+  thumbnailUrl: AndyRichards.jpg
+  team: true
+  ribbon: 
+    - {abbr: "Yoch TV", title: "Chief Technology Officer"}
+  social: 
+    - {name: "linkedin", link: "https://linkedin.com"}
+- 
+  id: 2
+  name: "Bryan"
+  surname: "Gordon"
+  title: "Chief Financial Officer"
+  thumbnailUrl: BryanGordon.jpg
+  team: true
+  ribbon: 
+    - {abbr: "Yoch TV", title: "Chief Financial Officer"}
+  social: 
+    - {name: "google-plus", link: "https://google.com/+OstapAndrusiv"}
+    - {name: "twitter", link: "https://twitter.com/p1f"}
+    - {name: "site", link: "http://andrusiv.com/"}
+- 
+  id: 3
+  name: "Michael "
+  surname: "Landes"
+  title: "Head of Strategic Development"
+  thumbnailUrl: MichaelLandes.jpg
+  team: true
+  ribbon: 
+    - {abbr: "GDG", title: "Head of Strategic Development"}
+  social: 
+    - {name: "google-plus", link: "https://google.com/+OstapAndrusiv"}
+    - {name: "twitter", link: "https://twitter.com/p1f"}
+    - {name: "site", link: "http://andrusiv.com/"}
+- 
+  id: 4
+  name: "Jane"
+  surname: "Parker"
+  title: "Chief Human Resources Officer"
+  thumbnailUrl: JaneParker.jpg
+  team: true
+  social: 
+    - {name: "linkedin", link: "https://linkedin.com"}
+- 
+  id: 5
+  name: "Elizabeth"
+  surname: "Carey"
+  title: "Head of Marketing"
+  thumbnailUrl: ElizabethCarey.jpg
+  team: true
+  social: 
+    - {name: "linkedin", link: "https://linkedin.com"}
+- 
+  id: 6
+  name: "Kate"
+  surname: "Brooks"
+  title: "Community Development Lead"
+  thumbnailUrl: KateBrooks.jpg
+  birthday: 25.03.1973
+  subTeam: 
+  social: 
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}
