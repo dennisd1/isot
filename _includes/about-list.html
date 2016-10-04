@@ -1,12 +1,8 @@
 ﻿<html>
-<!--[if lt IE 7 ]> <html xmlns:fb="http://www.facebook.com/2008/fbml" class="ie6 ie ltie9 ltie8 no-js" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html xmlns:fb="http://www.facebook.com/2008/fbml" class="ie7 ie ltie9 ltie8 no-js" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html xmlns:fb="http://www.facebook.com/2008/fbml" class="ie8 ie ltie9 no-js" lang="en"> <![endif]-->
-<!--[if IE 9 ]>    <html xmlns:fb="http://www.facebook.com/2008/fbml" class="ie9 ie no-js" lang="en"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html xmlns:fb="http://www.facebook.com/2008/fbml" class="no-js" lang="en"> <!--<![endif]-->
     <head>
 
-
+	<script src="js/handlebars-1.0.0.beta.6.js"></script>
+	<script id="result-template" type="text/x-handlebars-template">
     <script>            window.yPageStart = new Date().getTime();
 </script>
 
@@ -610,7 +606,7 @@ c.onerror=function(){h=true;e()};c.src=window.yDFP.ABP.getPixelSource(2);k(l,100
 
     <div >
         <h1 class="biz-page-title embossed-text-white" itemprop="name">
-            Greenhearts Family Farm
+            {{businessname}}
         </h1>
             
         
@@ -963,7 +959,7 @@ c.onerror=function(){h=true;e()};c.src=window.yDFP.ABP.getPixelSource(2);k(l,100
                     
     <span class="offscreen">Phone number</span>
     <span class="biz-phone" itemprop="telephone">
-        (415) 971-5703
+        {{phone}}
     </span>
 
                 </li>
@@ -9410,4 +9406,39 @@ yelp.www.init.biz_details.initRatingDetails();
         <noscript>
             <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=102029836881428&ev=PageView&noscript=1"/>
         </noscript>
+</script>
+
+<body>
+
+	<h2>Edit your page</h2>
+
+	<input type="text" id="businessname" placeholder="Business Name"><br/>
+	<input type="text" id="phone" placeholder="Phone"><br/>
+
+	<button id="demoButton">Demo</button>
+
+	<div id="resultDiv"></div>
+
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		//Get the contents from the script block 
+		var source = document.querySelector("#result-template").innerHTML;
+		//Compile that baby into a template
+		template = Handlebars.compile(source);
+		document.querySelector("#demoButton").addEventListener("click", function() {
+			var businessname = document.querySelector("#businessname").value;
+			var lname = document.querySelector("#lastname").value;
+			var age = document.querySelector("#age").value;
+			var html = template({firstname:fname, lastname:lname,age:age});
+			document.querySelector("#resultDiv").innerHTML = html;
+		});
+	});
+	</script>
+  <script type="text/javascript">
+function foo(){
+     window.buttonid=document.getElementById('button1');
+     window.open("childwindow.html","child window");
+}
+</script>
+
     </body>
