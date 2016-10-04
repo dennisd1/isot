@@ -9420,25 +9420,18 @@ yelp.www.init.biz_details.initRatingDetails();
 	<div id="resultDiv"></div>
 
 	<script>
-	document.addEventListener("DOMContentLoaded", function() {
+		document.addEventListener("DOMContentLoaded", function() {
 		//Get the contents from the script block 
 		var source = document.querySelector("#result-template").innerHTML;
 		//Compile that baby into a template
 		template = Handlebars.compile(source);
 		document.querySelector("#demoButton").addEventListener("click", function() {
 			var businessname = document.querySelector("#businessname").value;
-			var lname = document.querySelector("#lastname").value;
-			var age = document.querySelector("#age").value;
-			var html = template({firstname:fname, lastname:lname,age:age});
+			var phone = document.querySelector("#phone").value;
+			var html = template({businessname:businessname, phone:phone});
 			document.querySelector("#resultDiv").innerHTML = html;
 		});
 	});
 	</script>
-  <script type="text/javascript">
-function foo(){
-     window.buttonid=document.getElementById('button1');
-     window.open("childwindow.html","child window");
-}
-</script>
 
     </body>
